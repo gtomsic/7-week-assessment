@@ -26,3 +26,16 @@ const isPangram = (str = "") => {
   return !alphaArr.length
 }
 console.log(isPangram(str))
+
+// Longest Word
+const findLongestWord = (arr) => {
+  let currValue = 0
+  arr.forEach((word) => {
+    word.split("").length > currValue
+      ? (currValue = word.split("").length)
+      : null
+  })
+  return currValue
+}
+
+console.log(findLongestWord(["hi", "hello"]))
