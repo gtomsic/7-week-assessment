@@ -1,5 +1,5 @@
 /////////////////////////////////
-///////// Double Append /////////
+///////// Doubler Append /////////
 /////////////////////////////////
 
 // TinyArray
@@ -25,13 +25,14 @@ append 95.25 μs
 
 // LargeArray
 /*
-Results for the extraLargeArray
+Results for the LargeArray
 insert 768.8915 ms
 append 490.583 μs
 */
 
 // ExtraLarge
 /*
+Results for the extraLargeArray
 insert 768.250458 ms
 append 2.27175 ms
 */
