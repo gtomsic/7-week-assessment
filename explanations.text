@@ -1,0 +1,18 @@
+#4 => In doubler append changing the values from tinyArray to xtraLarge Insertion have contants value with it almost like doesn't change change at  all.
+  => While on the other side dobler Insert changing the value from tinyArray to Large array while doublerAppend(xtraLargeArray) is in xtraLargeArray is contantly changing from nano seconds to milliseconds time passed by.
+  => Also noted that append time result is almost contant from tinyArray to xtraLargeArray.
+
+#5 => With this example when both function are given the same value it is noticesable that Insertion is a little bit slower compared to appending. Almost double the comsumed time to proccess and ofcourse it is going to barry upon how much power of device you are using. 
+  => But with my conclusion due to indexing proccess while push just added new index. And shift need to change the value of index at the moment you add new value in array. 
+  exampleArray = [one, two, three]
+  the default value if this index 
+  one is index = 0
+  two is index = 1
+  three is index of 1
+  now if you added a new value text four using shift
+  now it is going to change a little bit
+  four have index = 0
+  one is index = 1
+  two is index = 2 
+  three is index = 0
+  now imaging you added a thousand values on this the program keeps track all of the indexes inside the array therefore it almost double the time to proccess maybe tripple deppends how large is the data.
