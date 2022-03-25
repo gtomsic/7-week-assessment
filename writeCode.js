@@ -14,6 +14,8 @@ const addToZero = (myArray) => {
   }
   return defaultValue
 }
+// O(n2)
+// Using buble sort nested for loops with in function
 
 console.log("addToZero: ", addToZero([1, 2, 3]))
 
@@ -45,6 +47,9 @@ const isPangram = (str = "") => {
   return !alphaArr.length
 }
 console.log(isPangram(str))
+// O(n log n)
+// I use multiple things inside the function like sorting compared statement and reading values and indexes
+// Sorry Jeddy don't know what i am doing
 
 // Longest Word
 const findLongestWord = (arr) => {
@@ -56,5 +61,7 @@ const findLongestWord = (arr) => {
   })
   return currValue
 }
+// O(1)
+// Because my search is contant
 
 console.log(findLongestWord(["Understanding", "hi", "hello", "Gabriel"]))
