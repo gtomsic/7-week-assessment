@@ -1,4 +1,21 @@
 // Sum Zero
+const addToZero = (myArray) => {
+  let defaultValue = false
+  for (let i = 0; i < myArray.length; i++) {
+    for (let x = 0; x < myArray.length; x++) {
+      if (myArray[i] + myArray[x] === 0) {
+        if (i === x) {
+          return
+        } else {
+          defaultValue = true
+        }
+      }
+    }
+  }
+  return defaultValue
+}
+
+console.log("addToZero: ", addToZero([1, 2, 3]))
 
 // Unique Characters
 const hasUniqueChars = (text) => {
@@ -6,6 +23,8 @@ const hasUniqueChars = (text) => {
   const originalText = text.split("")
   return originalText.length === [...uniqText].length ? true : false
 }
+// O(n)
+// I bealieve because I used linear search and just get the length of array to compare
 
 console.log("HasUnique: ", hasUniqueChars("Moonday"))
 
@@ -38,4 +57,4 @@ const findLongestWord = (arr) => {
   return currValue
 }
 
-console.log(findLongestWord(["hi", "hello"]))
+console.log(findLongestWord(["Understanding", "hi", "hello", "Gabriel"]))
